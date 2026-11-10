@@ -1,0 +1,141 @@
+{
+  "experiment_timestamp_utc": "2026-11-09T11:35:05.696996+00:00",
+  "python_version": "3.13.18 (main, Oct 26 2026, 15:28:15) [GCC 13.3.0]",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "sklearn_version": "1.8.0",
+  "numpy_version": "2.4.6",
+  "pandas_version": "2.2.3",
+  "threadpool_info": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/usr/local/lib/python3.13/dist-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/usr/local/lib/python3.13/dist-packages/scipy.libs/libscipy_openblas-b75cc656.so",
+      "version": "0.3.29.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/usr/local/lib/python3.13/dist-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    }
+  ],
+  "parameters": {
+    "n_clusters": 5,
+    "init": "k-means++",
+    "max_iter": 300,
+    "tol": 0.0001,
+    "n_init_values": [
+      1,
+      10
+    ],
+    "kmeans_algorithm": "lloyd",
+    "minibatch_batch_size": 256,
+    "minibatch_max_no_improvement": 10,
+    "minibatch_init_size": null,
+    "minibatch_reassignment_ratio": 0.01,
+    "thread_limit": 1,
+    "time_repeats": 3,
+    "sample_sizes": [
+      1000,
+      5000,
+      10000,
+      25000,
+      50000,
+      100000
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71
+    ],
+    "feature_scenarios": {
+      "A_two_features": [
+        "Quantity",
+        "UnitPrice"
+      ],
+      "B_three_features": [
+        "Quantity",
+        "UnitPrice",
+        "TotalAmount"
+      ]
+    }
+  },
+  "split": {
+    "split_seed": 20261109,
+    "train_pool_rows": 427787,
+    "holdout_pool_rows": 102317,
+    "fixed_evaluation_rows": 10000,
+    "train_unique_invoices": 15968,
+    "holdout_unique_invoices": 3992
+  },
+  "cleaning_counts": [
+    {
+      "Item": "Original rows",
+      "Count": 541909
+    },
+    {
+      "Item": "After removing cancelled invoices",
+      "Count": 532621
+    },
+    {
+      "Item": "After removing non-positive/missing Quantity or UnitPrice",
+      "Count": 530104
+    },
+    {
+      "Item": "Final eligible rows",
+      "Count": 530104
+    },
+    {
+      "Item": "Missing CustomerID retained",
+      "Count": 132220
+    },
+    {
+      "Item": "Exact duplicate rows retained",
+      "Count": 5226
+    }
+  ],
+  "dataset_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+}

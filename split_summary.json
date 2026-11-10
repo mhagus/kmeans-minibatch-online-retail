@@ -1,0 +1,8 @@
+{
+  "split_seed": 20261109,
+  "train_pool_rows": 427787,
+  "holdout_pool_rows": 102317,
+  "fixed_evaluation_rows": 10000,
+  "train_unique_invoices": 15968,
+  "holdout_unique_invoices": 3992
+}

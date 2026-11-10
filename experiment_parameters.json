@@ -1,0 +1,68 @@
+{
+  "n_clusters": 5,
+  "init": "k-means++",
+  "max_iter": 300,
+  "tol": 0.0001,
+  "n_init_values": [
+    1,
+    10
+  ],
+  "kmeans_algorithm": "lloyd",
+  "minibatch_batch_size": 256,
+  "minibatch_max_no_improvement": 10,
+  "minibatch_init_size": null,
+  "minibatch_reassignment_ratio": 0.01,
+  "thread_limit": 1,
+  "time_repeats": 3,
+  "sample_sizes": [
+    1000,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71
+  ],
+  "feature_scenarios": {
+    "A_two_features": [
+      "Quantity",
+      "UnitPrice"
+    ],
+    "B_three_features": [
+      "Quantity",
+      "UnitPrice",
+      "TotalAmount"
+    ]
+  }
+}

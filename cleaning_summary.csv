@@ -1,0 +1,7 @@
+Item,Count
+Original rows,541909
+After removing cancelled invoices,532621
+After removing non-positive/missing Quantity or UnitPrice,530104
+Final eligible rows,530104
+Missing CustomerID retained,132220
+Exact duplicate rows retained,5226
